@@ -1,0 +1,31 @@
+{% extends "main.html" %}
+{% block tabs %}
+  {{ super() }}
+  <style>.md-header{position:initial}.md-main__inner{margin:0}.md-content{display:none}@media screen and (min-width:60em){.md-sidebar--secondary{display:none}}@media screen and (min-width:76.25em){.md-sidebar--primary{display:none}}</style>
+  <section class="mdx-container">
+    <div class="md-grid md-typeset">
+      <div class="mdx-hero">
+        <div class="mdx-hero__image">
+          <br>
+          <br>
+          <br>
+          <br>
+          <img src="assets/images/legent-logo.webp" alt="" style="padding-left: -400 !important;" width="400" height="400" draggable="false">
+
+        </div>
+        <div class="mdx-hero__content">
+          <h1>A platform for<br>language-interactive<br>embodied agents</h1>
+          <p>Set up in 5 minutes.</p>
+          <a href="{{ 'started/installation' | url }}" title="Get started with LEGENT" class="md-button md-button--primary">
+            Quick start
+          </a>
+          <a href="{{ 'roadmaps/' | url }}" title="LEGENT Roadmap" class="md-button">
+            See roadmap
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+{% endblock %}
+{% block content %}{% endblock %}
+{% block footer %}{% endblock %}

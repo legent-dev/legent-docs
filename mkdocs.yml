@@ -1,0 +1,42 @@
+site_name: 'LEGENT'
+# repo_name: LEGENT
+repo_url: https://github.com/legent-dev/legent-docs
+# site_url: https://docs.legent.ai
+theme:
+  name: material
+  custom_dir: overrides
+  features:
+    - content.code.annotate
+    - content.tabs.link
+    - navigation.instant
+    - navigation.tabs
+    - navigation.sections # add collapse
+    - navigation.top # add return top button
+    - navigation.tracking
+  palette:
+    primary: dark # light blue, green
+    accent: default
+  logo: robot.svg
+  favicon: robot_dark.svg
+  icon:
+    repo: fontawesome/brands/github
+nav:
+  - Home: index.md
+  - Getting Started:
+      - Introduction: started/introduction.md
+      - Installation: started/installation.md
+      - Play: started/play.md
+  - Core API:
+      - Observation Space: api/observation.md
+      - Action Space: api/action.md
+      - Training Loop Example: api/loop.md
+      - Training Environment Config: api/config.md
+
+markdown_extensions:
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - attr_list
+  - md_in_html
+dev_addr: 127.0.0.1:8001
