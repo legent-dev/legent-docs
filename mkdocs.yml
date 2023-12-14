@@ -8,7 +8,7 @@ theme:
   features:
     - content.code.annotate
     - content.tabs.link
-    - navigation.instant
+    # - navigation.instant # this will cause the page to become unresponsive at times.
     - navigation.tabs
     - navigation.sections # add collapse
     - navigation.top # add return top button
