@@ -1,3 +1,4 @@
+
 LEGENT is a platform for language-interactive embodied agents. LEGENT provides an easy-to-use environment that enables an agent receive texts and first-person-view images as observations and conduct actions including speaking in a 3d game world,
 where you can train your AI with reinforcement or supervised learning.
 

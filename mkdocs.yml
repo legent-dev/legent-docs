@@ -13,6 +13,7 @@ theme:
     - navigation.sections # add collapse
     - navigation.top # add return top button
     - navigation.tracking
+    - content.action.edit # edit this page
   palette:
     primary: dark # light blue, green
     accent: default
@@ -20,17 +21,40 @@ theme:
   favicon: robot_dark.svg
   icon:
     repo: fontawesome/brands/github
+    edit: material/pencil
 nav:
   - Home: index.md
-  - Getting Started:
-      - Introduction: started/introduction.md
-      - Installation: started/installation.md
-      - Play: started/play.md
-  - Core API:
-      - Observation Space: api/observation.md
-      - Action Space: api/action.md
-      - Training Loop Example: api/loop.md
-      - Training Environment Config: api/config.md
+  - Documentation:
+      - Getting Started:
+        - Introduction: documentation/introduction.md
+        - Installation: documentation/installation.md
+        - Play: documentation/play.md
+      - API:
+        - Observation Space: documentation/observation.md
+        - Action Space: documentation/action.md
+        - Training Loop Example: documentation/loop.md
+        - Training Environment Config: documentation/config.md
+  - Tutorial:
+      - Come here: tutorial/come.md
+      - Baseline: tutorial/baseline.md
+  - Blog:
+      - The origin: blog/origin.md
+      - Fundation models: blog/fundation.md
+      - Roadmap: blog/roadmap.md
+  - Question:
+      - qa/qa.md
+
+plugins:
+  - i18n:
+      docs_structure: folder
+      languages:
+        - locale: en
+          name: English
+          build: true
+        - locale: zh
+          default: true
+          name: Chinese
+          build: true
 
 markdown_extensions:
   - pymdownx.highlight
@@ -39,4 +63,7 @@ markdown_extensions:
   - pymdownx.superfences
   - attr_list
   - md_in_html
+  - admonition # admonition like !!! ???
+  - pymdownx.details
+  - pymdownx.superfences
 dev_addr: 127.0.0.1:8001

@@ -14,14 +14,25 @@
 
         </div>
         <div class="mdx-hero__content">
-          <h1>A platform for<br>language-interactive<br>embodied agents</h1>
-          <p>Set up in 5 minutes.</p>
-          <a href="{{ 'started/installation' | url }}" title="Get started with LEGENT" class="md-button md-button--primary">
-            Quick start
-          </a>
-          <a href="{{ 'roadmaps/' | url }}" title="LEGENT Roadmap" class="md-button">
-            See roadmap
-          </a>
+          {% if config.theme.language == 'zh' %}
+            <h1>语言交互的<br>具身智能体平台<br></h1>
+            <p>5分钟开始你的旅程</p>
+            <a href="{{ 'documentation/installation' | url }}" title="Get started with LEGENT" class="md-button md-button--primary">
+              快速开始
+            </a>
+            <a href="{{ 'blog/roadmap' | url }}" title="LEGENT Roadmap" class="md-button">
+              平台计划
+            </a>
+          {% else %}
+            <h1>A platform for<br>language-interactive<br>embodied agents</h1>
+            <p>Set up in 5 minutes.</p>
+            <a href="{{ 'documentation/installation' | url }}" title="Get started with LEGENT" class="md-button md-button--primary">
+              Quick start
+            </a>
+            <a href="{{ 'blog/roadmap' | url }}" title="LEGENT Roadmap" class="md-button">
+              See roadmap
+            </a>
+          {% endif %}
         </div>
       </div>
     </div>

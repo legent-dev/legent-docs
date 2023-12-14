@@ -6,7 +6,7 @@ This repository contains the documentation website code and Markdown source file
 ### Installation
 
 ```
-pip install mkdocs-material mkdocs-minify-plugin
+pip install mkdocs-material mkdocs-static-i18n[material]
 ```
 
 ### Run
